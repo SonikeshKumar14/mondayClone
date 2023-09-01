@@ -7,12 +7,12 @@ const Nav = () => {
 
   return (
     <nav>
-      <div className="logo-container" onClick={() => navigate('/')}>
+      <div className="logo-container" onClick={() => navigate('/')} style={{cursor:'pointer'}}>
         <img src={logo} alt="logo"/>
       </div>
       <div className="controls-container">
-        <div className="icon" onClick={() => navigate('/ticket')}>➕</div>
-        <div className="icon" onClick={() => navigate('/')}>❮❮</div>
+        <div className="icon" onClick={() => navigate('/ticket')} style={{cursor:'pointer'}}>➕</div>
+        <div className="icon" onClick={() => navigate('/')} style={{cursor:'pointer'}}>❮❮</div>
       </div>
     </nav>
   )
